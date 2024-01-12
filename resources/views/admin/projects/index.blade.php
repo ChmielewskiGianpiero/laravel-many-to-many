@@ -28,14 +28,14 @@
                             <td>{{ optional($project->type)->name }}</td>
                             <td>{{ $project->content }}</td>
                             <td>
-                                <a href="{{route('admin.projects.edit', $project)}}">Modifica</a>
+                                <a href="{{route('admin.projects.edit', $project)}}" class="btn btn-warning fs-btn">Modifica</a>
                             </td>
                             <td>
                                 <form action="{{route('admin.projects.destroy', $project)}}" method="POST">
                                     @csrf
                                     @method('DELETE')
 
-                                    <input class="btn btn-danger ms-fs" type="submit" value="Elimina">
+                                    <input class="btn btn-danger fs-btn" type="submit" value="Elimina">
                                 </form>
                             </td>
                         </tr>
