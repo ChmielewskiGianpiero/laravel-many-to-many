@@ -23,7 +23,7 @@ class StoreProjectRequest extends FormRequest
     {
         return [
             'title'=>'required|max:255|unique:projects|min:3',
-            'content'=>'required|max:255|min:3'
+            'content'=>'max:255|min:3'
         ];
     }
 }

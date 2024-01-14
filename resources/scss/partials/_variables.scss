@@ -5,6 +5,7 @@ a {
 
 ul,li,menu {
     list-style: none;
+    padding: 0px;
 }
 
 img {
@@ -13,4 +14,10 @@ img {
 
 .fs-btn{
     font-size: 12px;
+}
+
+.color-badge-text {
+    color: black;
+    background-color: darkturquoise;
+    font-size: 15px;
 }
